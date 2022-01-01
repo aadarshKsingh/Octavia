@@ -1,0 +1,285 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+MERGED from [:just_audio] /home/aadarshksingh/StudioProjects/octavia/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] /home/aadarshksingh/StudioProjects/octavia/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:audio_service] /home/aadarshksingh/StudioProjects/octavia/build/audio_service/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] /home/aadarshksingh/StudioProjects/octavia/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:android_external_storage] /home/aadarshksingh/StudioProjects/octavia/build/android_external_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] /home/aadarshksingh/StudioProjects/octavia/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:audio_session] /home/aadarshksingh/StudioProjects/octavia/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler] /home/aadarshksingh/StudioProjects/octavia/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:on_audio_query] /home/aadarshksingh/StudioProjects/octavia/build/on_audio_query/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/aadarshksingh/.gradle/caches/transforms-3/55eb94935d1ac4009e879828bc447c56/transformed/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/247a2936de780eae9199417df0cc42b0/transformed/jetified-exoplayer-dash-2.15.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/77e70be42c65c193e2b53cf64a775a16/transformed/jetified-exoplayer-hls-2.15.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b9b9f8e3551d8f6d1325b4d88afa07df/transformed/jetified-exoplayer-smoothstreaming-2.15.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b5743a3ae421e08654ba9bb4f938ad07/transformed/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.media2:media2-common:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/a44d6b35e4d27e202519083c2d22fe21/transformed/jetified-media2-common-1.1.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.4.1] /home/aadarshksingh/.gradle/caches/transforms-3/89218777beebebb1a2b6de2d48523896/transformed/media-1.4.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/aadarshksingh/.gradle/caches/transforms-3/dc6075d56cc0c4c1c7fc72b4d0369ad2/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/a24c8cf480391843d9db7b2f7724e224/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/2ca16cf37fa6502666c4c6d35a8c2772/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/6cd7aa4c30fe873ce2977071c3e9b75b/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/e0e1d85489f53fd5cdf3a2744026e9bb/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /home/aadarshksingh/.gradle/caches/transforms-3/981ecbe24b2af511f86d946c7448666b/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/aadarshksingh/.gradle/caches/transforms-3/d4316c44789a2bfc202427c783e0d0e3/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/f0d053bf889773037f5f5b665ec66f05/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/a1ebb17dd51074f78c3ed688ab12c559/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/54c35214071f027b47f117a4a7ae7a8b/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/7888949120aa3f56c1eafe932e7d8177/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/2e164987486c94c0917d632bc5bb0e89/transformed/jetified-exoplayer-extractor-2.15.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/4bca7bf0844afad3d4124a94220db7fe/transformed/jetified-exoplayer-common-2.15.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aadarshksingh/.gradle/caches/transforms-3/0df023f64cef70cb7aabbee9d2caf065/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/aadarshksingh/.gradle/caches/transforms-3/2869703f6da73e6c189966f0551d3969/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/613ca3652f8aecbbaf23befc269b5f2a/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/aadarshksingh/.gradle/caches/transforms-3/c413ecd4945d16b62f2352bdca3efd76/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml:1:1-35:12
+	package
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:1-60:12
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:3:5-81
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:3:5-81
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:3:5-81
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:3:22-79
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:4:5-80
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:4:5-80
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:4:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:7:5-76
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:7:5-76
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:7:22-74
+application
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:8:4-59:19
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:8:4-59:19
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:8:4-59:19
+MERGED from [androidx.core:core:1.6.0] /home/aadarshksingh/.gradle/caches/transforms-3/981ecbe24b2af511f86d946c7448666b/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /home/aadarshksingh/.gradle/caches/transforms-3/981ecbe24b2af511f86d946c7448666b/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aadarshksingh/.gradle/caches/transforms-3/0df023f64cef70cb7aabbee9d2caf065/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aadarshksingh/.gradle/caches/transforms-3/0df023f64cef70cb7aabbee9d2caf065/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:11:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /home/aadarshksingh/.gradle/caches/transforms-3/981ecbe24b2af511f86d946c7448666b/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:9:9-32
+	android:icon
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:10:9-43
+activity#com.ryanheise.audioservice.AudioServiceActivity
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:13:9-42:20
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:13:9-42:20
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:13:9-42:20
+	android:launchMode
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:15:13-43
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:15:13-43
+	android:hardwareAccelerated
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:18:13-47
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:18:13-47
+	android:windowSoftInputMode
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:19:13-55
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:19:13-55
+	android:configChanges
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:17:13-163
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:17:13-163
+	android:theme
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:16:13-47
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:16:13-47
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:14:13-75
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:25:13-28:17
+	android:resource
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:27:15-52
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:26:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:34:13-37:17
+	android:resource
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:36:15-61
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:35:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:38:13-41:29
+action#android.intent.action.MAIN
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:39:17-68
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:40:17-76
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:40:27-74
+service#com.ryanheise.audioservice.AudioService
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:43:10-47:23
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:43:10-47:23
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:43:10-47:23
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:43:19-73
+intent-filter#action:name:android.media.browse.MediaBrowserService
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:44:15-46:31
+action#android.media.browse.MediaBrowserService
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:45:17-83
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:45:25-80
+meta-data#flutterEmbedding
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:50:9-52:33
+	android:value
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:52:13-30
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:51:13-44
+receiver#com.ryanheise.audioservice.MediaButtonReceiver
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:53:17-57:20
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:53:17-57:20
+MERGED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:53:17-57:20
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:53:27-88
+intent-filter#action:name:android.intent.action.MEDIA_BUTTON
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:54:9-56:25
+action#android.intent.action.MEDIA_BUTTON
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:55:9-69
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml:55:17-66
+uses-sdk
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+MERGED from [:just_audio] /home/aadarshksingh/StudioProjects/octavia/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:just_audio] /home/aadarshksingh/StudioProjects/octavia/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/aadarshksingh/StudioProjects/octavia/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/aadarshksingh/StudioProjects/octavia/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audio_service] /home/aadarshksingh/StudioProjects/octavia/build/audio_service/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audio_service] /home/aadarshksingh/StudioProjects/octavia/build/audio_service/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /home/aadarshksingh/StudioProjects/octavia/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /home/aadarshksingh/StudioProjects/octavia/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:android_external_storage] /home/aadarshksingh/StudioProjects/octavia/build/android_external_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:android_external_storage] /home/aadarshksingh/StudioProjects/octavia/build/android_external_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /home/aadarshksingh/StudioProjects/octavia/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /home/aadarshksingh/StudioProjects/octavia/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audio_session] /home/aadarshksingh/StudioProjects/octavia/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:audio_session] /home/aadarshksingh/StudioProjects/octavia/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /home/aadarshksingh/StudioProjects/octavia/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /home/aadarshksingh/StudioProjects/octavia/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:on_audio_query] /home/aadarshksingh/StudioProjects/octavia/build/on_audio_query/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:on_audio_query] /home/aadarshksingh/StudioProjects/octavia/build/on_audio_query/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/aadarshksingh/.gradle/caches/transforms-3/55eb94935d1ac4009e879828bc447c56/transformed/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/aadarshksingh/.gradle/caches/transforms-3/55eb94935d1ac4009e879828bc447c56/transformed/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/247a2936de780eae9199417df0cc42b0/transformed/jetified-exoplayer-dash-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/247a2936de780eae9199417df0cc42b0/transformed/jetified-exoplayer-dash-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/77e70be42c65c193e2b53cf64a775a16/transformed/jetified-exoplayer-hls-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/77e70be42c65c193e2b53cf64a775a16/transformed/jetified-exoplayer-hls-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b9b9f8e3551d8f6d1325b4d88afa07df/transformed/jetified-exoplayer-smoothstreaming-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b9b9f8e3551d8f6d1325b4d88afa07df/transformed/jetified-exoplayer-smoothstreaming-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b5743a3ae421e08654ba9bb4f938ad07/transformed/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b5743a3ae421e08654ba9bb4f938ad07/transformed/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-common:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/a44d6b35e4d27e202519083c2d22fe21/transformed/jetified-media2-common-1.1.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media2:media2-common:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/a44d6b35e4d27e202519083c2d22fe21/transformed/jetified-media2-common-1.1.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.4.1] /home/aadarshksingh/.gradle/caches/transforms-3/89218777beebebb1a2b6de2d48523896/transformed/media-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.4.1] /home/aadarshksingh/.gradle/caches/transforms-3/89218777beebebb1a2b6de2d48523896/transformed/media-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/aadarshksingh/.gradle/caches/transforms-3/dc6075d56cc0c4c1c7fc72b4d0369ad2/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/aadarshksingh/.gradle/caches/transforms-3/dc6075d56cc0c4c1c7fc72b4d0369ad2/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/a24c8cf480391843d9db7b2f7724e224/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/a24c8cf480391843d9db7b2f7724e224/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/2ca16cf37fa6502666c4c6d35a8c2772/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/2ca16cf37fa6502666c4c6d35a8c2772/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/6cd7aa4c30fe873ce2977071c3e9b75b/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/6cd7aa4c30fe873ce2977071c3e9b75b/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/e0e1d85489f53fd5cdf3a2744026e9bb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/e0e1d85489f53fd5cdf3a2744026e9bb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /home/aadarshksingh/.gradle/caches/transforms-3/981ecbe24b2af511f86d946c7448666b/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /home/aadarshksingh/.gradle/caches/transforms-3/981ecbe24b2af511f86d946c7448666b/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/aadarshksingh/.gradle/caches/transforms-3/d4316c44789a2bfc202427c783e0d0e3/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/aadarshksingh/.gradle/caches/transforms-3/d4316c44789a2bfc202427c783e0d0e3/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/f0d053bf889773037f5f5b665ec66f05/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/f0d053bf889773037f5f5b665ec66f05/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/a1ebb17dd51074f78c3ed688ab12c559/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/a1ebb17dd51074f78c3ed688ab12c559/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/54c35214071f027b47f117a4a7ae7a8b/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/54c35214071f027b47f117a4a7ae7a8b/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/7888949120aa3f56c1eafe932e7d8177/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/7888949120aa3f56c1eafe932e7d8177/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/2e164987486c94c0917d632bc5bb0e89/transformed/jetified-exoplayer-extractor-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/2e164987486c94c0917d632bc5bb0e89/transformed/jetified-exoplayer-extractor-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/4bca7bf0844afad3d4124a94220db7fe/transformed/jetified-exoplayer-common-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/4bca7bf0844afad3d4124a94220db7fe/transformed/jetified-exoplayer-common-2.15.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aadarshksingh/.gradle/caches/transforms-3/0df023f64cef70cb7aabbee9d2caf065/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aadarshksingh/.gradle/caches/transforms-3/0df023f64cef70cb7aabbee9d2caf065/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/aadarshksingh/.gradle/caches/transforms-3/2869703f6da73e6c189966f0551d3969/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/aadarshksingh/.gradle/caches/transforms-3/2869703f6da73e6c189966f0551d3969/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/613ca3652f8aecbbaf23befc269b5f2a/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aadarshksingh/.gradle/caches/transforms-3/613ca3652f8aecbbaf23befc269b5f2a/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/aadarshksingh/.gradle/caches/transforms-3/c413ecd4945d16b62f2352bdca3efd76/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/aadarshksingh/.gradle/caches/transforms-3/c413ecd4945d16b62f2352bdca3efd76/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /home/aadarshksingh/StudioProjects/octavia/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.exoplayer:exoplayer-core:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b5743a3ae421e08654ba9bb4f938ad07/transformed/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/4bca7bf0844afad3d4124a94220db7fe/transformed/jetified-exoplayer-common-2.15.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/4bca7bf0844afad3d4124a94220db7fe/transformed/jetified-exoplayer-common-2.15.0/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.exoplayer:exoplayer-core:2.15.0] /home/aadarshksingh/.gradle/caches/transforms-3/b5743a3ae421e08654ba9bb4f938ad07/transformed/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:24:22-76
+queries
+ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:24:5-34:15
+MERGED from [androidx.media:media:1.4.1] /home/aadarshksingh/.gradle/caches/transforms-3/89218777beebebb1a2b6de2d48523896/transformed/media-1.4.1/AndroidManifest.xml:24:5-28:15
+MERGED from [androidx.media:media:1.4.1] /home/aadarshksingh/.gradle/caches/transforms-3/89218777beebebb1a2b6de2d48523896/transformed/media-1.4.1/AndroidManifest.xml:24:5-28:15
+intent#action:name:android.media.browse.MediaBrowserService
+ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:25:9-27:18
+intent#action:name:androidx.media2.session.MediaSessionService
+ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:28:9-30:18
+action#androidx.media2.session.MediaSessionService
+ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:29:13-82
+	android:name
+		ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:29:21-79
+intent#action:name:androidx.media2.session.MediaLibraryService
+ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:31:9-33:18
+action#androidx.media2.session.MediaLibraryService
+ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:32:13-82
+	android:name
+		ADDED from [androidx.media2:media2-session:1.1.3] /home/aadarshksingh/.gradle/caches/transforms-3/4cda09346a459e8b0d97a21bc1eacd16/transformed/jetified-media2-session-1.1.3/AndroidManifest.xml:32:21-79

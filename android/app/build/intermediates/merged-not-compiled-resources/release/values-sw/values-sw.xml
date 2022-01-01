@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="6743534657295236036" name="default_notification_channel_name">"Kitambua ngoma"</string>
+    <string msgid="4221330012095125431" name="pause_button_content_description">"Sitisha"</string>
+    <string msgid="6034272287948142298" name="play_button_content_description">"Cheza"</string>
+    <string msgid="17824442457643717" name="skip_to_next_item_button_content_description">"Nenda kwenye kipengee kinachofuata"</string>
+    <string msgid="7233771088610629683" name="skip_to_previous_item_button_content_description">"Rudi kwenye kipengee kilichotangulia"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>
