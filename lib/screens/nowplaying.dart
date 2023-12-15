@@ -139,8 +139,9 @@ class NowPlaying extends StatelessWidget {
                     () => Expanded(
                       child: SliderTheme(
                         data: SliderThemeData(
-                          trackHeight: 0.5,
-                          activeTrackColor: Colors.grey.shade200,
+                          trackHeight: 2,
+                          activeTrackColor: Colors.red,
+                          secondaryActiveTrackColor: Colors.red,
                           inactiveTrackColor: Colors.grey.shade900,
                           thumbShape: SliderComponentShape.noThumb,
                           trackShape: const RoundedRectSliderTrackShape(),
@@ -152,6 +153,8 @@ class NowPlaying extends StatelessWidget {
                             onChanged: (value) {
                               _playerContr.ap
                                   .seek(Duration(milliseconds: value.toInt()));
+                              _playerContr.currentPosition.value =
+                                  value.toInt();
                             }),
                       ),
                     ),
@@ -206,9 +209,6 @@ class NowPlaying extends StatelessWidget {
                             milliseconds:
                                 _playerContr.ap.position.inMilliseconds));
                         //////////////////////
-                        // await _playerContr.play();
-
-                        // await _playerContr.pause();
                       }
                     },
                     icon: AnimatedSwitcher(
