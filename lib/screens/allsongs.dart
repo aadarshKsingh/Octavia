@@ -100,6 +100,7 @@ class _AllSongsState extends State<AllSongs>
                       _playerContr.play();
                       _constContr.pc.value.open();
                       _constContr.panelState.value = PanelState.open;
+                      print("CURRENT POSITION:+${_playerContr.ap.position}");
                     },
                   );
                 },

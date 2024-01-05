@@ -1,17 +1,25 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 import '../config.dart';
 
 class NowPlaying extends StatelessWidget {
-  const NowPlaying({Key? key}) : super(key: key);
+  NowPlaying({Key? key}) : super(key: key);
+
+  final Config _playerContr = Get.find();
+
+  Duration _duration = Duration.zero;
+
+  Duration _position = Duration.zero;
 
   format(Duration d) => d.toString().substring(2, 7);
+
   @override
   Widget build(BuildContext context) {
-    final Config _playerContr = Get.find();
+    // final Config _playerContr = Get.find();
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -126,45 +134,77 @@ class NowPlaying extends StatelessWidget {
                   const EdgeInsets.only(left: 8.0, right: 8.0, bottom: 20.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Obx(
-                    () => Text(
-                      format(Duration(
-                          milliseconds: _playerContr.getCurrentPosition)),
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.white),
-                    ),
-                  ),
-                  Obx(
-                    () => Expanded(
-                      child: SliderTheme(
-                        data: SliderThemeData(
-                          trackHeight: 2,
-                          activeTrackColor: Colors.red,
-                          secondaryActiveTrackColor: Colors.red,
-                          inactiveTrackColor: Colors.grey.shade900,
-                          thumbShape: SliderComponentShape.noThumb,
-                          trackShape: const RoundedRectSliderTrackShape(),
-                        ),
-                        child: Slider(
-                            min: 0.0,
-                            max: _playerContr.getDuration.toDouble() + 1.0,
-                            value: _playerContr.getCurrentPosition.toDouble(),
-                            onChanged: (value) {
-                              _playerContr.ap
-                                  .seek(Duration(milliseconds: value.toInt()));
-                              _playerContr.currentPosition.value =
-                                  value.toInt();
-                            }),
-                      ),
-                    ),
-                  ),
-                  Obx(
-                    () => Text(
-                      format(Duration(milliseconds: _playerContr.getDuration)),
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.white),
-                    ),
+                  StreamBuilder(
+                    stream: _playerContr.ap.durationStream,
+                    builder: (context, snapshot) {
+                      final duration = snapshot.data ?? Duration.zero;
+                      return StreamBuilder<Duration>(
+                          stream: _playerContr.ap.positionStream,
+                          builder: (context, snapshot) {
+                            var position = snapshot.data ?? Duration.zero;
+                            _position = position;
+                            // if (position > duration) {
+                            //   position = duration;
+                            // }
+                            return Expanded(
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    format(_playerContr.ap.position),
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                  ),
+                                  SliderTheme(
+                                      data: SliderThemeData(
+                                        trackHeight: 2,
+                                        activeTrackColor: Colors.red,
+                                        secondaryActiveTrackColor: Colors.red,
+                                        inactiveTrackColor:
+                                            Colors.grey.shade900,
+                                        thumbShape:
+                                            SliderComponentShape.noThumb,
+                                        trackShape:
+                                            const RoundedRectSliderTrackShape(),
+                                      ),
+                                      child: Expanded(
+                                        child: Slider(
+                                          min: 0.0,
+                                          max: _playerContr.getDuration
+                                                  .toDouble() +
+                                              1.0,
+                                          value: _playerContr
+                                              .ap.position.inMilliseconds
+                                              .toDouble(),
+                                          onChanged: (value) {
+                                            _playerContr.ap.seek(Duration(
+                                                milliseconds: value.toInt()));
+                                            _playerContr.setCurrentPosition =
+                                                _playerContr
+                                                    .ap.position.inMilliseconds;
+                                            _playerContr.setCurrentPosition =
+                                                value;
+                                          },
+                                        ),
+                                      )),
+                                  Text(
+                                    format(Duration(
+                                        milliseconds:
+                                            _playerContr.getDuration)),
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                  ),
+                                ],
+                              ),
+                            );
+                          });
+                    },
                   ),
                 ],
               ),
@@ -209,6 +249,8 @@ class NowPlaying extends StatelessWidget {
                             milliseconds:
                                 _playerContr.ap.position.inMilliseconds));
                         //////////////////////
+                        _playerContr.setCurrentPosition =
+                            _playerContr.ap.position.inMilliseconds;
                       }
                     },
                     icon: AnimatedSwitcher(

@@ -92,59 +92,55 @@ class MiniPlayer extends StatelessWidget {
                               color: Colors.transparent,
                               child: Padding(
                                 padding: const EdgeInsets.only(top: 8.0),
-                                child: Container(
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      IconButton(
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    IconButton(
+                                      splashRadius: 5,
+                                      onPressed: () =>
+                                          _playerContr.previousSong(),
+                                      icon: const Icon(
+                                          Icons.navigate_before_outlined),
+                                    ),
+                                    Obx(
+                                      () => IconButton(
                                         splashRadius: 5,
-                                        onPressed: () =>
-                                            _playerContr.previousSong(),
-                                        icon: const Icon(
-                                            Icons.navigate_before_outlined),
-                                      ),
-                                      Obx(
-                                        () => IconButton(
-                                          splashRadius: 5,
-                                          onPressed: () async {
-                                            // if (_playerContr.ap.playing) {
-                                            //   _playerContr.setStatus(false);
-                                            //   _playerContr.ap.pause();
-                                            // } else {
-                                            //   _playerContr.setStatus(true);
-                                            //   if (_playerContr
-                                            //           .getCurrentPosition ==
-                                            //       0) {
-                                            //     _playerContr.ap.play();
-                                            //   } else {
-                                            //     await _playerContr.ap.seek(Duration(
-                                            //         milliseconds: _playerContr
-                                            //             .getCurrentPosition));
-                                            //     await _playerContr.ap.play();
-                                            //   }
-                                            // }
-                                            await _playerContr.pause();
-                                          },
-                                          icon: AnimatedSwitcher(
-                                            duration: const Duration(
-                                                milliseconds: 400),
-                                            child: _playerContr.getStatus
-                                                ? const Icon(Icons.pause_circle)
-                                                : const Icon(
-                                                    Icons.play_arrow_sharp),
-                                          ),
+                                        onPressed: () async {
+                                          // if (_playerContr.ap.playing) {
+                                          //   _playerContr.setStatus(false);
+                                          //   _playerContr.ap.pause();
+                                          // } else {
+                                          //   _playerContr.setStatus(true);
+                                          //   if (_playerContr
+                                          //           .getCurrentPosition ==
+                                          //       0) {
+                                          //     _playerContr.ap.play();
+                                          //   } else {
+                                          //     await _playerContr.ap.seek(Duration(
+                                          //         milliseconds: _playerContr
+                                          //             .getCurrentPosition));
+                                          //     await _playerContr.ap.play();
+                                          //   }
+                                          // }
+                                          await _playerContr.pause();
+                                        },
+                                        icon: AnimatedSwitcher(
+                                          duration:
+                                              const Duration(milliseconds: 400),
+                                          child: _playerContr.getStatus
+                                              ? const Icon(Icons.pause_circle)
+                                              : const Icon(
+                                                  Icons.play_arrow_sharp),
                                         ),
                                       ),
-                                      IconButton(
-                                        splashRadius: 5,
-                                        onPressed: () =>
-                                            _playerContr.nextSong(),
-                                        icon: const Icon(
-                                            Icons.navigate_next_outlined),
-                                      )
-                                    ],
-                                  ),
+                                    ),
+                                    IconButton(
+                                      splashRadius: 5,
+                                      onPressed: () => _playerContr.nextSong(),
+                                      icon: const Icon(
+                                          Icons.navigate_next_outlined),
+                                    )
+                                  ],
                                 ),
                               ),
                             )

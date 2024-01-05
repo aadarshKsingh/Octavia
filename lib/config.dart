@@ -1,3 +1,4 @@
+import 'package:get_storage/get_storage.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -5,6 +6,7 @@ import 'constants/constants.dart';
 import 'package:scrollable_panel/scrollable_panel.dart';
 
 class Config extends GetxController {
+  final ap = AudioPlayer();
   RxList<String> songUri = [''].obs;
   RxBool isPlaying = false.obs;
   RxList<String> songName = [''].obs;
@@ -27,8 +29,6 @@ class Config extends GetxController {
   var favoriteArtist = RxList<String>();
   var favoriteId = RxList<int>();
   var favoriteDuration = RxList<int>();
-
-  final ap = AudioPlayer();
 
   @override
   onInit() {
@@ -115,8 +115,11 @@ class Config extends GetxController {
   }
 
   play() async {
+    currentPosition = ap.position.inMilliseconds.obs;
     await ap.setUrl(currentUri.value);
     await ap.play();
+    await ap.positionStream;
+
     // ap.positionStream.listen((event) {
     // currentPosition.value = event.inMilliseconds;
     // if (event.inMilliseconds >= currentDuration.value) nextSong();
@@ -208,4 +211,6 @@ class Config extends GetxController {
   get getId => currentId.value;
   get getDuration => currentDuration.value;
   get getCurrentPosition => currentPosition.value;
+
+  set setCurrentPosition(currentPos) => currentPosition.value = currentPos;
 }
