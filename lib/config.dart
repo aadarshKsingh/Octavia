@@ -19,6 +19,7 @@ class Config extends GetxController {
   RxInt currentId = 0.obs;
   RxInt currentDuration = 0.obs;
   RxInt currentPosition = 0.obs;
+  RxInt loopStatus = 0.obs;
   var status = 0;
 
   final Constants _constContr = Get.put(Constants());

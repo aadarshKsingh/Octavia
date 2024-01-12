@@ -79,7 +79,7 @@ class NowPlaying extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.grey[600],
                     borderRadius: const BorderRadius.all(
-                      Radius.circular(50),
+                      Radius.circular(15),
                     ),
                   ),
                   child: Icon(
@@ -93,6 +93,7 @@ class NowPlaying extends StatelessWidget {
                 artworkHeight: Get.height * 0.3,
                 artworkWidth: Get.height * 0.3,
                 size: 500,
+                artworkBorder: const BorderRadius.all(Radius.circular(15)),
               ),
             ),
             SizedBox(
@@ -216,9 +217,23 @@ class NowPlaying extends StatelessWidget {
                 SizedBox(
                   child: IconButton(
                       padding: const EdgeInsets.all(0),
-                      onPressed: () async =>
-                          _playerContr.ap.setLoopMode(LoopMode.one),
-                      icon: const Icon(Icons.repeat),
+                      onPressed: () async => {
+                            if (_playerContr.ap.loopMode == LoopMode.off)
+                              {
+                                _playerContr.loopStatus.value = 1,
+                                _playerContr.ap.setLoopMode(LoopMode.one)
+                              }
+                            else
+                              {
+                                _playerContr.loopStatus.value = 0,
+                                _playerContr.ap.setLoopMode(LoopMode.off)
+                              }
+                          },
+                      icon: Obx(
+                        () => _playerContr.loopStatus.value == 0
+                            ? const Icon(Icons.repeat_rounded)
+                            : const Icon(Icons.repeat_on_rounded),
+                      ),
                       color: Colors.white),
                 ),
                 SizedBox(
