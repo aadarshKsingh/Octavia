@@ -31,10 +31,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_snake_navigationbar: ^0.6.1
   get: ^4.6.6
   get_storage: ^2.1.1
   google_fonts: ^6.1.0
-  google_nav_bar: ^5.0.6
   just_audio: ^0.9.36
   on_audio_query: ^2.9.0
   permission_handler: ^11.0.1

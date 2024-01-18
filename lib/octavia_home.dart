@@ -10,6 +10,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'screens/allsongs.dart';
 import 'constants/constants.dart';
 import 'screens/miniplayer.dart';
+import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 
 class OctaviaHome extends StatefulWidget {
   const OctaviaHome({Key? key}) : super(key: key);
@@ -39,123 +40,119 @@ class _OctaviaHomeState extends State<OctaviaHome> {
     final Config _playerContr = Get.put(Config());
 
     return Scaffold(
-      key: _scaffoldKey,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Text(
-          "Octavia",
-          style: GoogleFonts.biryani(
-              color: Colors.grey[600],
-              letterSpacing: 10,
-              fontWeight: FontWeight.w100,
-              fontSize: 25),
-        ),
-        centerTitle: false,
-        actions: [
-          IconButton(
-            onPressed: () async {
-              Get.isDarkMode
-                  ? Get.changeThemeMode(ThemeMode.light)
-                  : Get.changeThemeMode(ThemeMode.dark);
-              _constContr.theme
-                  .write('darkmode', !_constContr.theme.read('darkmode'));
-            },
-            icon: AnimatedSwitcher(
-              duration: Duration(milliseconds: 200),
-              child: _constContr.theme.read('darkmode')
-                  ? Icon(
-                      Icons.dark_mode_sharp,
-                      color: Colors.grey[600],
-                    )
-                  : Icon(Icons.dark_mode_outlined, color: Colors.grey[600]),
-            ),
+        key: _scaffoldKey,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          title: Text(
+            "Octavia",
+            style: GoogleFonts.biryani(
+                color: Colors.grey[600],
+                letterSpacing: 10,
+                fontWeight: FontWeight.w100,
+                fontSize: 25),
           ),
-        ],
-      ),
-      body: Stack(children: [
-        PageView.builder(
-          itemCount: 4,
-          controller: pageController,
-          itemBuilder: (context, position) => tabs.elementAt(position),
-          onPageChanged: (page) {
-            _constContr.setTabIndex = page;
-            pageController.animateToPage(page,
-                duration: Duration(milliseconds: 50),
-                curve: Curves.fastOutSlowIn);
-          },
-        ),
-        Obx(
-          () => _playerContr.getSongName != ''
-              ? const Positioned.fill(
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: MiniPlayer(),
-                  ),
-                )
-              : const SizedBox(
-                  height: 0,
-                  width: 0,
-                ),
-        ),
-      ]),
-      bottomNavigationBar: SafeArea(
-        child: Obx(
-          () => Container(
-            margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-            decoration: BoxDecoration(
-              color: context.isDarkMode ? Colors.black45 : Colors.white60,
-              borderRadius: const BorderRadius.all(Radius.circular(10)),
-              boxShadow: [
-                BoxShadow(
-                  spreadRadius: -3,
-                  blurRadius: 60,
-                  color: Colors.black.withOpacity(.4),
-                  offset: const Offset(0, 25),
-                )
-              ],
-            ),
-            child: GNav(
-              hoverColor: Colors.grey,
-              rippleColor: Color(_constContr.colors[_constContr.getTabIndex])
-                  .withOpacity(0.5),
-              tabBorderRadius: 10,
-              tabMargin: const EdgeInsets.all(10),
-              tabBackgroundColor:
-                  Color(_constContr.colors[_constContr.getTabIndex]),
-              tabs: [
-                GButton(
-                  padding: EdgeInsets.fromLTRB(15, 10, 15, 10),
-                  icon: Icons.music_note_outlined,
-                  text: "Songs",
-                ),
-                GButton(
-                  icon: Icons.album_outlined,
-                  text: "Albums",
-                  padding: EdgeInsets.fromLTRB(15, 10, 15, 10),
-                ),
-                GButton(
-                  icon: Icons.person_outline,
-                  text: "Artists",
-                  padding: EdgeInsets.fromLTRB(15, 10, 15, 10),
-                ),
-                GButton(
-                  icon: Icons.favorite_outline,
-                  text: "Favorites",
-                  padding: EdgeInsets.fromLTRB(15, 10, 15, 10),
-                )
-              ],
-              selectedIndex: _constContr.getTabIndex,
-              onTabChange: (index) {
-                _constContr.setTabIndex = index;
-                pageController.animateToPage(index,
-                    duration: Duration(milliseconds: 100),
-                    curve: Curves.easeIn);
+          centerTitle: false,
+          actions: [
+            IconButton(
+              onPressed: () async {
+                Get.isDarkMode
+                    ? Get.changeThemeMode(ThemeMode.light)
+                    : Get.changeThemeMode(ThemeMode.dark);
+                _constContr.theme
+                    .write('darkmode', !_constContr.theme.read('darkmode'));
               },
+              icon: AnimatedSwitcher(
+                duration: Duration(milliseconds: 200),
+                child: _constContr.theme.read('darkmode')
+                    ? Icon(
+                        Icons.dark_mode_sharp,
+                        color: Colors.grey[600],
+                      )
+                    : Icon(Icons.dark_mode_outlined, color: Colors.grey[600]),
+              ),
+            ),
+          ],
+        ),
+        body: Stack(children: [
+          PageView.builder(
+            itemCount: 4,
+            controller: pageController,
+            itemBuilder: (context, position) => tabs.elementAt(position),
+            onPageChanged: (page) {
+              _constContr.setTabIndex = page;
+              pageController.animateToPage(page,
+                  duration: Duration(milliseconds: 50),
+                  curve: Curves.fastOutSlowIn);
+            },
+          ),
+          Obx(
+            () => _playerContr.getSongName != ''
+                ? const Positioned.fill(
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: MiniPlayer(),
+                    ),
+                  )
+                : const SizedBox(
+                    height: 0,
+                    width: 0,
+                  ),
+          ),
+        ]),
+        bottomNavigationBar: SafeArea(
+          child: Obx(
+            () => Container(
+              margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+              decoration: BoxDecoration(
+                color: context.isDarkMode ? Colors.black45 : Colors.white60,
+                borderRadius: const BorderRadius.all(Radius.circular(10)),
+                boxShadow: [
+                  BoxShadow(
+                    spreadRadius: -3,
+                    blurRadius: 60,
+                    color: Colors.black.withOpacity(.4),
+                    offset: const Offset(0, 25),
+                  ),
+                ],
+              ),
+              child: SnakeNavigationBar.color(
+                behaviour: SnakeBarBehaviour.floating,
+                snakeShape: SnakeShape.indicator,
+                snakeViewColor:
+                    Color(_constContr.colors[_constContr.getTabIndex]),
+                selectedItemColor:
+                    Color(_constContr.colors[_constContr.getTabIndex]),
+                unselectedItemColor:
+                    context.isDarkMode ? Colors.white : Colors.black,
+                currentIndex: _constContr.getTabIndex,
+                onTap: (index) {
+                  _constContr.setTabIndex = index;
+                  pageController.jumpToPage(
+                    index,
+                  );
+                },
+                items: const [
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.music_note_outlined),
+                    label: "Songs",
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.album_outlined),
+                    label: "Albums",
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.person_outline),
+                    label: "Artists",
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.favorite_outline),
+                    label: "Favorites",
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 }
