@@ -3,13 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:octaviax/constants/constants.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 import '../config.dart';
+import 'package:scrollable_panel/scrollable_panel.dart';
 
 class NowPlaying extends StatelessWidget {
   NowPlaying({Key? key}) : super(key: key);
 
   final Config _playerContr = Get.find();
+  final Constants _constContr = Get.find();
 
   Duration _duration = Duration.zero;
 
@@ -146,9 +149,21 @@ class NowPlaying extends StatelessWidget {
                           builder: (context, snapshot) {
                             var position = snapshot.data ?? Duration.zero;
                             _position = position;
-                            // if (position > duration) {
-                            //   position = duration;
-                            // }
+                            _playerContr.ap.playerStateStream.listen((state) {
+                              // if (state.processingState ==
+                              //     ProcessingState.completed) {
+                              //   // _playerContr.setStatus(false);
+                              //   // _playerContr.nextSong();
+                              //   _playerContr.ap.pause();
+                              //   // _playerContr.check();
+                              // }
+                            });
+                            if (position >= duration) {
+                              position = duration;
+                              _playerContr.ap.pause();
+                              _playerContr.nextSong();
+                              _playerContr.setStatus(true);
+                            }
                             return Expanded(
                               child: Row(
                                 mainAxisAlignment:
@@ -176,9 +191,7 @@ class NowPlaying extends StatelessWidget {
                                       child: Expanded(
                                         child: Slider(
                                           min: 0.0,
-                                          max: _playerContr.getDuration
-                                                  .toDouble() +
-                                              1.0,
+                                          max: _playerContr.getDuration + 1.0,
                                           value: _playerContr
                                               .ap.position.inMilliseconds
                                               .toDouble(),
@@ -189,7 +202,7 @@ class NowPlaying extends StatelessWidget {
                                                 _playerContr
                                                     .ap.position.inMilliseconds;
                                             _playerContr.setCurrentPosition =
-                                                value;
+                                                value.toInt();
                                           },
                                         ),
                                       )),

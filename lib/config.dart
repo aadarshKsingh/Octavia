@@ -118,8 +118,8 @@ class Config extends GetxController {
   play() async {
     currentPosition = ap.position.inMilliseconds.obs;
     await ap.setUrl(currentUri.value);
+    await setStatus(false);
     await ap.play();
-    await ap.positionStream;
 
     // ap.positionStream.listen((event) {
     // currentPosition.value = event.inMilliseconds;
@@ -130,12 +130,12 @@ class Config extends GetxController {
   }
 
   pause() async {
-    ap.pause();
-    status = 0;
+    await ap.pause();
+    await setStatus(false);
   }
 
   previousSong() async {
-    ap.pause();
+    await ap.pause();
     if (songUri.indexOf(currentUri.value) > 0) {
       currentSongName.value = songName[songUri.indexOf(currentUri.value) - 1];
       currentArtistName.value =
@@ -151,12 +151,12 @@ class Config extends GetxController {
       currentId.value = id[id.length - 1];
       currentDuration.value = duration[duration.length - 1];
     }
-    play();
+    await play();
   }
 
   nextSong() async {
-    ap.pause();
-    if (songUri.indexOf(currentUri.value) < songUri.length - 1) {
+    await ap.pause();
+    if (songUri.indexOf(currentUri.value) != songUri.indexOf(songUri.last)) {
       currentSongName.value = songName[songUri.indexOf(currentUri.value) + 1];
       currentArtistName.value =
           artistName[songUri.indexOf(currentUri.value) + 1];
@@ -171,7 +171,7 @@ class Config extends GetxController {
       currentId.value = id[0];
       currentDuration.value = duration[0];
     }
-    play();
+    await play();
   }
 
   addToFavorites(
@@ -213,5 +213,5 @@ class Config extends GetxController {
   get getDuration => currentDuration.value;
   get getCurrentPosition => currentPosition.value;
 
-  set setCurrentPosition(currentPos) => currentPosition.value = currentPos;
+  set setCurrentPosition(int currentPos) => currentPosition.value = currentPos;
 }
