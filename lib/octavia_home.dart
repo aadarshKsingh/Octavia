@@ -24,7 +24,12 @@ class _OctaviaHomeState extends State<OctaviaHome> {
   // String? artist = '';
   final _scaffoldKey = GlobalKey<ScaffoldState>();
   format(Duration d) => d.toString().substring(2, 7);
-  static List<Widget> tabs = [AllSongs(), Albums(), Artists(), Favorites()];
+  static List<Widget> tabs = [
+    AllSongs(),
+    const Albums(),
+    Artists(),
+    const Favorites()
+  ];
 
   PageController pageController = PageController();
 
@@ -82,13 +87,13 @@ class _OctaviaHomeState extends State<OctaviaHome> {
         ),
         Obx(
           () => _playerContr.getSongName != ''
-              ? Positioned.fill(
+              ? const Positioned.fill(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: MiniPlayer(),
                   ),
                 )
-              : Container(
+              : const SizedBox(
                   height: 0,
                   width: 0,
                 ),
@@ -97,16 +102,16 @@ class _OctaviaHomeState extends State<OctaviaHome> {
       bottomNavigationBar: SafeArea(
         child: Obx(
           () => Container(
-            margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+            margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
             decoration: BoxDecoration(
               color: context.isDarkMode ? Colors.black45 : Colors.white60,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
               boxShadow: [
                 BoxShadow(
                   spreadRadius: -3,
                   blurRadius: 60,
                   color: Colors.black.withOpacity(.4),
-                  offset: Offset(0, 25),
+                  offset: const Offset(0, 25),
                 )
               ],
             ),
@@ -115,7 +120,7 @@ class _OctaviaHomeState extends State<OctaviaHome> {
               rippleColor: Color(_constContr.colors[_constContr.getTabIndex])
                   .withOpacity(0.5),
               tabBorderRadius: 10,
-              tabMargin: EdgeInsets.all(10),
+              tabMargin: const EdgeInsets.all(10),
               tabBackgroundColor:
                   Color(_constContr.colors[_constContr.getTabIndex]),
               tabs: [

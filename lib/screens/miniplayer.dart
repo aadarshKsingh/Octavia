@@ -95,13 +95,6 @@ class MiniPlayer extends StatelessWidget {
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    IconButton(
-                                      splashRadius: 5,
-                                      onPressed: () =>
-                                          _playerContr.previousSong(),
-                                      icon: const Icon(
-                                          Icons.navigate_before_outlined),
-                                    ),
                                     Obx(
                                       () => IconButton(
                                         splashRadius: 5,
@@ -134,12 +127,6 @@ class MiniPlayer extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    IconButton(
-                                      splashRadius: 5,
-                                      onPressed: () => _playerContr.nextSong(),
-                                      icon: const Icon(
-                                          Icons.navigate_next_outlined),
-                                    )
                                   ],
                                 ),
                               ),
@@ -156,9 +143,7 @@ class MiniPlayer extends StatelessWidget {
           ),
         ),
         onPanUpdate: (details) => {
-          if (details.delta.dy > 0 ||
-              details.delta.dx > 0 ||
-              details.delta.dx < 0)
+          if (details.delta.dy < 0)
             {
               _playerContr.ap.pause(),
               _constContr.pc.value.close(),
@@ -166,7 +151,11 @@ class MiniPlayer extends StatelessWidget {
               _playerContr.removeMiniPlayer()
             }
           else
-            Navigator.push(context, _constContr.getRoute)
+            Navigator.push(context, _constContr.getRoute),
+          if (details.delta.dx < 0)
+            _playerContr.previousSong()
+          else
+            _playerContr.nextSong()
         },
         onTap: () => Navigator.push(context, _constContr.getRoute),
       ),
