@@ -143,7 +143,7 @@ class MiniPlayer extends StatelessWidget {
           ),
         ),
         onPanUpdate: (details) => {
-          if (details.delta.dy < 0)
+          if (details.delta.dy > 0)
             {
               _playerContr.ap.pause(),
               _constContr.pc.value.close(),

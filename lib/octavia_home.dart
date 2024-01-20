@@ -6,7 +6,6 @@ import 'package:octaviax/screens/artists.dart';
 import 'package:octaviax/screens/favorites.dart';
 import 'config.dart';
 import 'package:get/get.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'screens/allsongs.dart';
 import 'constants/constants.dart';
 import 'screens/miniplayer.dart';
@@ -44,13 +43,12 @@ class _OctaviaHomeState extends State<OctaviaHome> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          title: Text(
-            "Octavia",
-            style: GoogleFonts.biryani(
-                color: Colors.grey[600],
-                letterSpacing: 10,
+          title: const Text(
+            "OctaX",
+            style: TextStyle(
+                fontFamily: 'Geist',
                 fontWeight: FontWeight.w100,
-                fontSize: 25),
+                letterSpacing: 2),
           ),
           centerTitle: false,
           actions: [
@@ -63,7 +61,7 @@ class _OctaviaHomeState extends State<OctaviaHome> {
                     .write('darkmode', !_constContr.theme.read('darkmode'));
               },
               icon: AnimatedSwitcher(
-                duration: Duration(milliseconds: 200),
+                duration: const Duration(milliseconds: 200),
                 child: _constContr.theme.read('darkmode')
                     ? Icon(
                         Icons.dark_mode_sharp,
@@ -82,7 +80,7 @@ class _OctaviaHomeState extends State<OctaviaHome> {
             onPageChanged: (page) {
               _constContr.setTabIndex = page;
               pageController.animateToPage(page,
-                  duration: Duration(milliseconds: 50),
+                  duration: const Duration(milliseconds: 50),
                   curve: Curves.fastOutSlowIn);
             },
           ),

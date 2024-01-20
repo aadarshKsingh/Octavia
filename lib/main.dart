@@ -52,8 +52,8 @@ class _MyAppState extends State<MyApp> with AutomaticKeepAliveClientMixin {
     super.build(context);
     return GetMaterialApp(
         title: 'Octavia',
-        darkTheme: ThemeData.dark(),
+        darkTheme: ThemeData(brightness: Brightness.dark, fontFamily: 'Geist'),
         themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
-        home: OctaviaHome());
+        home: const OctaviaHome());
   }
 }
